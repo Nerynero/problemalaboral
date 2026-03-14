@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo de Desarrollo | COBAT 22</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 15px 5%;
+            display: flex;
+            align-items: center;
+            border-bottom: 3px solid #800020;
+        }
+
+        .logo-container img {
+            height: 70px;
+            width: auto;
+        }
+
+        nav {
+            background-color: #800020;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            background-color: #a01030;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: 30px auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .page-header {
+            border-bottom: 2px solid #800020;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            color: #800020;
+            margin: 0;
+        }
+
+        .intro-dev {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            color: #666;
+        }
+
+        /* --- GRID DE EDITORES --- */
+        .editors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .editor-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .editor-card:hover {
+            border-color: #800020;
+            transform: translateY(-5px);
+        }
+
+        .editor-photo {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 4px solid #800020;
+            margin-bottom: 15px;
+            object-fit: cover;
+            background-color: #eee;
+        }
+
+        .editor-card h3 {
+            margin: 10px 0 5px 0;
+            color: #800020;
+            font-size: 1.2em;
+        }
+
+        .editor-role {
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .editor-phrase {
+            font-style: italic;
+            color: #444;
+            font-size: 0.95em;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            width: 100%;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body onclick="playMusic()">
+
+    <audio id="bgMusic" loop>
+        <source src="cancion.mp3" type="audio/mpeg">
+    </audio>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo Institucional COBAT 22">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="admin.html">Admin II</a></li>
+            <li><a href="historia.html">Conciencia</a></li>
+            <li><a href="comu.html">Comunicación</a></li>
+            <li><a href="psico.html">Psicología</a></li>
+            <li><a href="organismos.html">Organismos</a></li>
+            <li><a href="user.html" class="active">Editores</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Equipo Editorial y Técnico</h1>
+        </div>
+
+        <p class="intro-dev">
+            El presente proyecto fue desarrollado por alumnos del Colegio de Bachilleres del Estado de Tamaulipas, Plantel 22, integrando los conocimientos adquiridos en la materia de Informática y diversas áreas académicas.
+        </p>
+
+        <div class="editors-grid">
+            
+            <div class="editor-card">
+                <img src="alumno1.png" alt="Fatima" class="editor-photo">
+                <h3>Fatima</h3>
+                <div class="editor-role">Desarrollo Web</div>
+                <p class="editor-phrase">"Crear es el superpoder de nuestra mente."</p>
+            </div>
+
+            <div class="editor-card">
+                <img src="alumno2.png" alt="Giovany" class="editor-photo">
+                <h3>Giovany</h3>
+                <div class="editor-role">Gestión de Contenidos</div>
+                <p class="editor-phrase">"La tecnología nos conecta, la creatividad nos une."</p>
+            </div>
+
+            <div class="editor-card">
+                <img src="alumno3.png" alt="Jacqueline" class="editor-photo">
+                <h3>Jacqueline</h3>
+                <div class="editor-role">Investigación Académica</div>
+                <p class="editor-phrase">"Aprender es divertido, compartirlo es mejor."</p>
+            </div>
+
+            <div class="editor-card">
+                <img src="alumno4.png" alt="Emily" class="editor-photo">
+                <h3>Emily</h3>
+                <div class="editor-role">Diseño Visual</div>
+                <p class="editor-phrase">"Cada detalle cuenta para contar una historia."</p>
+            </div>
+
+            <div class="editor-card">
+                <img src="alumno5.png" alt="Madayd" class="editor-photo">
+                <h3>Madayd</h3>
+                <div class="editor-role">Soporte Técnico</div>
+                <p class="editor-phrase">"Diseñamos el futuro, un parcial a la vez."</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 COBAT 22 - Reynosa, Tamaulipas<br>
+        Proyecto Educativo de Integración Digital
+    </footer>
+
+    <script>
+        function playMusic() {
+            var audio = document.getElementById("bgMusic");
+            if (audio.paused) { audio.play(); }
+        }
+    </script>
+</body>
+</html>

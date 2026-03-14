@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conciencia Histórica III | COBAT 22</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 15px 5%;
+            display: flex;
+            align-items: center;
+            border-bottom: 3px solid #800020;
+        }
+
+        .logo-container img {
+            height: 70px;
+            width: auto;
+        }
+
+        nav {
+            background-color: #800020;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            background-color: #a01030;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: 30px auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .page-header {
+            border-bottom: 2px solid #800020;
+            margin-bottom: 30px;
+        }
+
+        .page-header h1 {
+            color: #800020;
+            margin: 0 0 10px 0;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        .info-section h2 {
+            color: #800020;
+            font-size: 1.4em;
+            margin-top: 30px;
+        }
+
+        .highlight-box {
+            background-color: #fcf8e3;
+            padding: 20px;
+            border-radius: 4px;
+            border-left: 5px solid #8a6d3b;
+            margin: 20px 0;
+        }
+
+        .side-content img {
+            width: 100%;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .teacher-info {
+            background-color: #800020;
+            color: white;
+            padding: 20px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .teacher-info img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid white;
+            margin-bottom: 10px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body onclick="playMusic()">
+
+    <audio id="bgMusic" loop>
+        <source src="cancion.mp3" type="audio/mpeg">
+    </audio>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo Institucional">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="admin.html">Admin II</a></li>
+            <li><a href="historia.html" class="active">Conciencia</a></li>
+            <li><a href="comu.html">Comunicación</a></li>
+            <li><a href="psico.html">Psicología</a></li>
+            <li><a href="organismos.html">Organismos</a></li>
+            <li><a href="user.html">Editores</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Conciencia Histórica III</h1>
+            <p><strong>Formación Humanística y Ciudadana</strong></p>
+        </div>
+
+        <div class="content-grid">
+            <div class="info-section">
+                <h2>Enfoque de la Materia</h2>
+                <p>
+                    La asignatura de Conciencia Histórica III busca que el estudiante no solo memorice datos, sino que desarrolle una capacidad crítica para analizar los procesos sociales, económicos y políticos que han dado forma al México contemporáneo y al mundo.
+                </p>
+
+                <div class="highlight-box">
+                    <strong>Objetivo:</strong> Comprender el presente a través del estudio riguroso del pasado, identificando las causas y consecuencias de los grandes movimientos de transformación nacional.
+                </div>
+
+                <h2>Temas del Primer Parcial</h2>
+                <p>
+                    En esta etapa nos enfocamos en la reorganización del Estado mexicano, el impacto de las políticas sociales y cómo las decisiones históricas del siglo XX influyen en los derechos y la estructura social actual. Se analiza la transición de modelos económicos y el papel de las instituciones en la estabilidad del país.
+                </p>
+
+                <ul>
+                    <li>El Estado de Bienestar en México y su evolución.</li>
+                    <li>Impacto de la reorganización económica en la sociedad moderna.</li>
+                    <li>Movimientos sociales y la lucha por la democracia.</li>
+                    <li>Análisis de la identidad nacional en un mundo globalizado.</li>
+                </ul>
+            </div>
+
+            <div class="side-content">
+                <img src="img_historia.png" alt="Historia de México">
+                
+                <div class="teacher-info">
+                    <img src="img2.png" alt="Docente">
+                    <h3 style="margin: 5px 0;">Sergio Jovanni</h3>
+                    <p style="margin: 0; font-size: 0.9em; opacity: 0.9;">Especialista en Historia</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Colegio de Bachilleres del Estado de Tamaulipas - Plantel 22
+    </footer>
+
+    <script>
+        function playMusic() {
+            var audio = document.getElementById("bgMusic");
+            if (audio.paused) { audio.play(); }
+        }
+    </script>
+</body>
+</html>

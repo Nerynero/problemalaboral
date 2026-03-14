@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organismos | COBAT 22</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 15px 5%;
+            display: flex;
+            align-items: center;
+            border-bottom: 3px solid #800020;
+        }
+
+        .logo-container img {
+            height: 70px;
+            width: auto;
+        }
+
+        nav {
+            background-color: #800020;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            background-color: #a01030;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: 30px auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .page-header {
+            border-bottom: 2px solid #800020;
+            margin-bottom: 30px;
+        }
+
+        .page-header h1 {
+            color: #800020;
+            margin: 0 0 10px 0;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        .info-section h2 {
+            color: #800020;
+            font-size: 1.4em;
+            margin-top: 30px;
+            border-left: 4px solid #800020;
+            padding-left: 10px;
+        }
+
+        .progression-card {
+            background-color: #fdfdfd;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .progression-card h3 {
+            margin-top: 0;
+            color: #800020;
+            font-size: 1.1em;
+        }
+
+        .side-content img {
+            width: 100%;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .teacher-info {
+            background-color: #800020;
+            color: white;
+            padding: 20px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .teacher-info img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid white;
+            margin-bottom: 10px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body onclick="playMusic()">
+
+    <audio id="bgMusic" loop>
+        <source src="cancion.mp3" type="audio/mpeg">
+    </audio>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo Institucional">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="admin.html">Admin II</a></li>
+            <li><a href="historia.html">Conciencia</a></li>
+            <li><a href="comu.html">Comunicación</a></li>
+            <li><a href="psico.html">Psicología</a></li>
+            <li><a href="organismos.html" class="active">Organismos</a></li>
+            <li><a href="user.html">Editores</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Organismos</h1>
+            <p><strong>Campo de Ciencias Experimentales</strong></p>
+        </div>
+
+        <div class="content-grid">
+            <div class="info-section">
+                <h2>Propósito de la Materia</h2>
+                <p>
+                    El propósito de la materia de Organismos es comprender cómo están formados los seres vivos y cómo funcionan sus diferentes estructuras. A través del estudio de las células, los tejidos y los sistemas del cuerpo, se busca entender cómo los organismos realizan sus funciones vitales y cómo se relacionan con su entorno.
+                </p>
+
+                <h2>Progresiones del Primer Parcial</h2>
+                
+                <div class="progression-card">
+                    <h3>Progresión 1: La Célula y Funciones Vitales</h3>
+                    <p>Explica que la célula es la unidad básica de todos los seres vivos. Se estudia la diferencia entre organismos unicelulares y pluricelulares, además de analizar cómo los procesos de herencia y evolución influyen en la diversidad biológica.</p>
+                </div>
+
+                <div class="progression-card">
+                    <h3>Progresión 2: Estructuras y Reacciones</h3>
+                    <p>Trata sobre las estructuras internas celulares y el papel crucial de la membrana celular en el intercambio de sustancias. Se analizan las reacciones químicas y moléculas esenciales para la vida.</p>
+                </div>
+
+                <div class="progression-card">
+                    <h3>Progresión 3: Organización Multicelular</h3>
+                    <p>Se enfoca en cómo las células se organizan para formar tejidos, órganos y sistemas complejos. Analiza la relación funcional entre estas estructuras y los cambios evolutivos a través del tiempo.</p>
+                </div>
+
+                <h2>Contenidos Destacados</h2>
+                <ul>
+                    <li>La célula como unidad estructural y funcional.</li>
+                    <li>Organismos unicelulares y pluricelulares.</li>
+                    <li>Membrana celular y transporte de sustancias.</li>
+                    <li>Niveles de organización: Células, tejidos, órganos y sistemas.</li>
+                    <li>Herencia y evolución biológica.</li>
+                </ul>
+            </div>
+
+            <div class="side-content">
+                <img src="img_organismos.png" alt="Biología Celular">
+                
+                <div class="teacher-info">
+                    <img src="img5.png" alt="Docente">
+                    <h3 style="margin: 5px 0;">Catedrático de Biología</h3>
+                    <p style="margin: 0; font-size: 0.9em; opacity: 0.9;">Ciencias Experimentales</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Colegio de Bachilleres del Estado de Tamaulipas - Plantel 22
+    </footer>
+
+    <script>
+        function playMusic() {
+            var audio = document.getElementById("bgMusic");
+            if (audio.paused) { audio.play(); }
+        }
+    </script>
+</body>
+</html>

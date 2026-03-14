@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunicación y Sociedad II | COBAT 22</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 15px 5%;
+            display: flex;
+            align-items: center;
+            border-bottom: 3px solid #800020;
+        }
+
+        .logo-container img {
+            height: 70px;
+            width: auto;
+        }
+
+        nav {
+            background-color: #800020;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            background-color: #a01030;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: 30px auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .page-header {
+            border-bottom: 2px solid #800020;
+            margin-bottom: 30px;
+        }
+
+        .page-header h1 {
+            color: #800020;
+            margin: 0 0 10px 0;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        .info-section h2 {
+            color: #800020;
+            font-size: 1.4em;
+            margin-top: 30px;
+        }
+
+        .academic-note {
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 4px;
+            border-left: 5px solid #800020;
+            margin: 20px 0;
+        }
+
+        .side-content img {
+            width: 100%;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .teacher-info {
+            background-color: #800020;
+            color: white;
+            padding: 20px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .teacher-info img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid white;
+            margin-bottom: 10px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body onclick="playMusic()">
+
+    <audio id="bgMusic" loop>
+        <source src="cancion.mp3" type="audio/mpeg">
+    </audio>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo Institucional">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="admin.html">Admin II</a></li>
+            <li><a href="historia.html">Conciencia</a></li>
+            <li><a href="comu.html" class="active">Comunicación</a></li>
+            <li><a href="psico.html">Psicología</a></li>
+            <li><a href="organismos.html">Organismos</a></li>
+            <li><a href="user.html">Editores</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Comunicación y Sociedad II</h1>
+            <p><strong>Campo de Lenguaje y Comunicación</strong></p>
+        </div>
+
+        <div class="content-grid">
+            <div class="info-section">
+                <h2>Propósito Formativo</h2>
+                <p>
+                    Esta materia examina la relación intrínseca entre los procesos comunicativos y la estructura social. Se busca que el estudiante identifique cómo los medios de comunicación masiva y las plataformas digitales influyen en la construcción de la realidad, la cultura y la opinión pública.
+                </p>
+
+                <div class="academic-note">
+                    <strong>Enfoque Crítico:</strong> El alumno desarrolla competencias para analizar la veracidad de la información, la ética en el periodismo y el impacto de la globalización mediática en las comunidades locales.
+                </div>
+
+                <h2>Temario del Primer Parcial</h2>
+                <p>
+                    Durante este periodo, exploramos la evolución de los medios masivos, desde la prensa escrita hasta el auge de las redes sociales. Analizamos el fenómeno de la sociedad de la información y los desafíos que presenta la brecha digital en el contexto actual.
+                </p>
+
+                <ul>
+                    <li>Estructura y función de los medios de comunicación masiva.</li>
+                    <li>La era digital: Internet como herramienta de transformación social.</li>
+                    <li>Cultura de masas y globalización mediática.</li>
+                    <li>Ética y responsabilidad en el manejo de la información.</li>
+                </ul>
+            </div>
+
+            <div class="side-content">
+                <img src="img_comu.png" alt="Comunicación Social">
+                
+                <div class="teacher-info">
+                    <img src="img3.png" alt="Docente">
+                    <h3 style="margin: 5px 0;">Luis Ángel Casso Castelán</h3>
+                    <p style="margin: 0; font-size: 0.9em; opacity: 0.9;">Especialista en Comunicación</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Colegio de Bachilleres del Estado de Tamaulipas - Plantel 22
+    </footer>
+
+    <script>
+        function playMusic() {
+            var audio = document.getElementById("bgMusic");
+            if (audio.paused) { audio.play(); }
+        }
+    </script>
+</body>
+</html>
